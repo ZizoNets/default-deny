@@ -73,7 +73,7 @@ Default deny between VLANs, and every exception gets its own policy:
 | **IoT** | DNS to Pi-hole | ✗ | — | ✗ | HTTP/S, NTP\* |
 | **Admin** | DNS to Pi-hole, SNMP traps to LibreNMS | ✗ | ✗ | — | HTTP/S, NTP\* |
 
-\* In theory. See [known issues](#known-issues).
+\* Plus whatever `VLANS INTERNET` lets through while I'm testing.
 
 The ones with a story:
 
@@ -153,16 +153,9 @@ Meanwhile, the FortiGate's device inventory is convinced my Proxmox host is a Wi
 
 </details>
 
-## Known issues
+## Work in progress
 
-Found while writing this. Fixing them is next week's topology change.
-
-1. **`VLANS INTERNET` makes the per-VLAN egress rules decorative.** Servers, IoT and Admin are limited to HTTP/HTTPS/NTP, and then `VLANS INTERNET`, right below, lets all four VLANs out on any port.
-2. **Admin's DNS to the internet never matches.** `Admin to Internet` allows DNS, but `VLANS DNS FORCE` sits above it and drops it first.
-3. **DoH walks straight past the Pi-hole.** DNS and DoT are blocked; DNS over HTTPS is just HTTPS.
-4. **Deny rules don't log.** The counters say something got blocked, not what.
-5. **No security profiles.** Every policy runs `no-inspection` with no AV, IPS or web filter, so the FortiGate filters at L3/L4 only, and the policies set to log security events log nothing.
-6. **SNMPv2c.** Communities travel in clear text inside the lab.
+Some things in here aren't how they should be, and I know. This is a test bench: rules get added, broken and cleaned up as I try ideas out, so the config you see is always halfway through some experiment. If something looks wrong, it's probably mid-test. If it still looks wrong next month, open an issue.
 
 ## What's next
 
