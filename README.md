@@ -12,7 +12,7 @@ My home network as of 23 November 2026: a FortiGate 40F, a Cisco SG300, a Wi-Fi 
 
 ## Topology
 
-![Topology](topology.png)
+![Topology](images/topology.png)
 
 Two networks, one inside the other:
 
@@ -114,9 +114,9 @@ SSID names are blacked out in the screenshots. Showing you my firewall rules is 
 <details>
 <summary>Screenshots</summary>
 
-![WAX214 wireless settings](wax214-wireless.png)
-![Main SSID](wax214-ssid-main.png)
-![IoT SSID](wax214-ssid-iot.png)
+![WAX214 wireless settings](images/wax214-wireless.png)
+![Main SSID](images/wax214-ssid-main.png)
+![IoT SSID](images/wax214-ssid-iot.png)
 
 </details>
 
@@ -130,8 +130,8 @@ SSID names are blacked out in the screenshots. Showing you my firewall rules is 
 <details>
 <summary>Screenshots</summary>
 
-![SG300 port security](sg300-port-security.png)
-![SG300 DHCP snooping](sg300-dhcp-snooping.png)
+![SG300 port security](images/sg300-port-security.png)
+![SG300 DHCP snooping](images/sg300-dhcp-snooping.png)
 
 </details>
 
@@ -148,8 +148,8 @@ Meanwhile, the FortiGate's device inventory is convinced my Proxmox host is a Wi
 <details>
 <summary>Screenshots</summary>
 
-![FortiGate interfaces](fortigate-interfaces.png)
-![FortiGate device inventory](fortigate-device-inventory.png)
+![FortiGate interfaces](images/fortigate-interfaces.png)
+![FortiGate device inventory](images/fortigate-device-inventory.png)
 
 </details>
 
