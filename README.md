@@ -1,4 +1,4 @@
-# Homelab · this week's edition
+# Homelab · this month's edition
 
 My home network as of 23 November 2026: a FortiGate 40F, a Cisco SG300, a Wi-Fi 6 access point and a mini PC running Proxmox, split into four VLANs. It's here in case it helps someone build theirs. Take whatever's useful; the mistakes come free of charge.
 
