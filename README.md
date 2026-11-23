@@ -8,7 +8,7 @@ My home network as of 23 November 2026: a FortiGate 40F, a Cisco SG300, a Wi-Fi 
 > - It all sits behind my ISP's CGNAT, the house router's NAT and the FortiGate's NAT. Triple NAT. Some days I can't reach it either.
 > - There isn't a single inbound policy on the FortiGate's WAN, and the SSL-VPN is off.
 >
-> If you want to break network gear, there are bug bounty programs that actually pay for it.
+> If you want to break network gear, there are bug bounty programs that actually pay for it (i won´t).
 
 ## Topology
 
